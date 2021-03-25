@@ -8,5 +8,5 @@ function splitSentence(sentence) {
     console.log(words);
 }
 
-splitSentence("My name is Ihor");
+splitSentence("My name is Denys");
 splitSentence("");
