@@ -13,6 +13,7 @@
   "author": "Denys Smei",
   "license": "MIT",
   "devDependencies": {
+    "custom_module": "file:custom_module",
     "eslint": "^7.22.0"
   }
 }
