@@ -1,0 +1,49 @@
+<!-- Модальне вікно -->
+<div class="modal fade" id="modal_tickets" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark">
+
+      <!-- Заголовок модального вікна -->
+      <div class="modal-header border-secondary">
+        <div class="d-flex flex-column">
+          <span class="fs-3 lh-1" id="tickets_title">#Title</span>
+        </div>
+        <button type="button" class="btn-close bg-primary" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Тіло модального вікна -->
+      <div class="modal-body">
+        <form>
+
+          <!-- Прізвище, ім’я, по батькові -->
+          <span class="fs-5">Потяг</span>
+          <input class="form-control fs-5 bg-dark text-light border-primary mb-2" id="tickets_name" type="text"
+            placeholder="Потяг" oninput="set_passenger(this)"">
+
+          <div class="row gx-3 mb-2">
+            <div class="col-12 col-sm-2">
+
+              <!-- Вік -->
+              <span class="fs-5">Пасажир</span>
+              <input class="form-control fs-5 bg-dark text-light border-primary" id="tickets_age" type="number"
+                placeholder="Пасажир" oninput="set_passenger(this)">
+            </div>
+
+            <div class="col-12 mb-2 d-block d-sm-none"></div>
+            <div class="col-12 col-sm-10">
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- Кнопки модального вікна -->
+      <div class="modal-footer border-secondary">
+        <button class="btn btn-outline-primary" id="tickets_yes" data-bs-dismiss="modal"
+          onclick="modal_add_tickets()">#Yes</button>
+        <button class="btn btn-outline-secondary" id="tickets_no" data-bs-dismiss="modal">Відміна</button>
+      </div>
+    </div>
+  </div>
+</div>
